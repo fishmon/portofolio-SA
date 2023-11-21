@@ -445,51 +445,46 @@ body {
     opacity: 0.9;
 }
 
-/* Larger than mobile */
-@media only screen and (min-width: 480px) {
-    .navbar {
-      padding: 0 5vw;
+
+
+@media (max-width: 996px) {
+    html {
+        font-size: 14px;
     }
-  
-    .main-content {
-      width: 60%;
+    .container {
+        position: absolute;
+        top: 50px;
+        background: #1d1d1d;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        padding: 0 10vw;
+        flex-direction: row;
+        justify-content: flex-end;
+        opacity: 0.9;
     }
-  
+
+    .link {
+        margin-left: auto;
+        text-align: center;
+        display: block;
+        height: 5opx;
+    }
+    .header {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    .header .profile-image {
+        width: 250px;
+        margin: 40px;
+
+    }
     .container-ab {
-      grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
-  
-    .container-with-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  /* Larger than tablet */
-  @media only screen and (min-width: 768px) {
-    .main-heading {
-      font-size: 4rem;
-    }
-  
-    .job {
-      padding: 8px 16px;
-    }
-  
     .right-side {
-      font-size: 1.2rem;
-    }
-  
-    .container-ab {
-      grid-template-columns: 1fr 2fr;
-    }
-  
-    .container-with-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
-  /* Larger than desktop */
-  @media only screen and (min-width: 1024px) {
-    .main-content {
-      width: 70%;
+        margin: auto;
     }
 }
+
